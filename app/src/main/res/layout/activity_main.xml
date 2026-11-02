@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <EditText android:id="@+id/etName"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Customer name" android:inputType="textPersonName" />
+
+        <EditText android:id="@+id/etPhone"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Mobile number" android:inputType="phone" android:maxLength="10" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Account type" />
+        <Spinner android:id="@+id/spAccountType"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:layout_marginTop="8dp" android:text="Branch" />
+        <Spinner android:id="@+id/spBranch"
+            android:layout_width="match_parent" android:layout_height="48dp" />
+
+        <Button android:id="@+id/btnCreate"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="24dp" android:text="Create account and continue" />
+    </LinearLayout>
+</ScrollView>
